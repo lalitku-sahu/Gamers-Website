@@ -10,7 +10,7 @@
 .full-page                       /* this is for styling class.full-page*/
 {
     width: 100vw;
-    background: url('https://th.bing.com/th/id/R.2cf54a48118e75b4dcb098db5d54c463?rik=zgSC7j26T1eMnw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2f9%2f4%2f112404.jpg&ehk=wndmSSLK7uigpcio6JSvkMEiLgDVFLaHeDHDvc2v7oQ%3d&risl=&pid=ImgRaw&r=0') top center no-repeat;
+    background: url('https://i.pinimg.com/originals/52/8c/49/528c49dff5561a263c451932d79d5e3c.jpg') top center no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -37,7 +37,7 @@ a
     width: 380px;
     height: 480px;
     top: 15vh;
-    left: 25px;
+    left: 50px;
     position: relative;
     margin: 2% auto;
     background:rgba(0,0,0,0.3);
