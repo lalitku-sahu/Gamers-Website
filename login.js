@@ -14,15 +14,6 @@ function login()
     z.style.left='0px';
 }
     
-var modal=document.getElementById('login-form');
-window.onclick=function(event)
-{
-    if (event.target== modal)
-    {
-        modal.style.display="none";
-    }
-}
-                                                                       
 var username=document.getElementById("username");
 var password=document.getElementById("password");
 message.onclick=function()  
@@ -41,16 +32,3 @@ forgot.onclick=function()
 {
     alert("You have forgotten your password");
 }     
-var icon=document.getElementById("icon");
-icon.onclick=function()
-{
-    document.body.classList.toggle("dark-theme");
-    if(document.body.classList.contains("dark-theme"))
-    {
-        icon.src="sun.png";
-    }
-    else
-    {
-        icon.src="moon.png";
-    }
-}
