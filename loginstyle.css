@@ -1,0 +1,200 @@
+/* CSS stands for cascading style sheet. It describes how HTML elements are to be displayed on screen */
+*                         /* is is used in place of body tag */ 
+{                        
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+     /* for styling body */
+}
+
+.full-page                       /* this is for styling class.full-page*/
+{
+    width: 100vw;
+    background: url('https://th.bing.com/th/id/R.2cf54a48118e75b4dcb098db5d54c463?rik=zgSC7j26T1eMnw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2f9%2f4%2f112404.jpg&ehk=wndmSSLK7uigpcio6JSvkMEiLgDVFLaHeDHDvc2v7oQ%3d&risl=&pid=ImgRaw&r=0') top center no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    /*this block of code is for setting the background image and position of the image */   
+}
+
+a
+{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+    /* this is for giving colour, font etc to href list elements */
+}
+/*lets move on to the html file and lets write code for the login form */    
+/* styling form box */                  
+#login form
+{
+    display: none;
+    /* this block is for hiding the form */                                                    
+}
+.form-box
+{
+    width: 380px;
+    height: 480px;
+    top: 15vh;
+    left: 25px;
+    position: relative;
+    margin: 2% auto;
+    background:rgba(0,0,0,0.3);
+    padding: 10px;
+    overflow: hidden;
+    /* creating the form with width, height etc */                                                
+}
+.button-box
+{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    /*styling and giving width margin etc to login & register button */ 
+}
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    /* to style the login and register button while they toggle */
+}
+#btn             /* "#" is used for specifying ID and "." is used to specify CLASS */
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #f3c693;
+    border-radius: 30px;
+    transition: .5s;
+    /* to give colour( i.e effects) transition, border etc to login & rigister button of form box */
+}
+.input-group-login
+{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    /* this is for styling the form id='login' class='input-group-login' */
+}
+.input-group-register
+{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    /* this is for styling the form id='register' class='input-group-register' */
+}
+.forgot-password
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    /* this is for styling the forgot password button of class.forgot-password */
+}
+.forgot-password a
+{
+    font-size: 20px;
+    color:rgb(125, 226, 43)
+    /* this is for giving font size and colour to href text */
+}
+.forgot-password a:hover
+{
+    color: #edf2fc;
+    /* this is for hover effect on forgot password i.e to give transition effect when we place the cursor on it */
+} 
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    /* to style all the input type of class.input-field under class.input-group-(login & register) */
+}
+.submit-btn
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #f3c693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    /* to style all the button type of class.submit-btn under class.input-group-(login & register) */
+}
+.check-box
+{
+    margin: 30px 20px 34px 0;
+    padding: 20%;
+    /* to style all the input of class.check-box under class.input-group-(login & register) */
+}
+span
+{
+    color: aliceblue;
+    font-size:15px;
+    bottom:68px;
+    position: center;
+    /* to style the <span> tag of class.check-box */
+}
+#login
+{
+    left:50px;
+    color: #edf2fc;
+    /* styling login form to seprate login & register form*/
+}
+#login input
+{
+    color: #edf2fc;
+    font-size:15;
+    /* above we styled login form now we styled inputs in login form */
+}
+#register
+{
+    left:450px;
+    color: #edf2fc;
+    /* styling register form to seprate login & register form*/
+}
+#register input
+{
+    color: #edf2fc;
+    font-size:15;
+    /* above we styled register form now we styled inputs in register form */
+}
+.social-links                                      /* this is for styling the-- */ 
+{
+    position: absolute;
+    margin-left: 8%;
+    top: 88vh;
+    
+}
+.social-links a                                    /* --social links that i added */
+{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.social-links a:hover
+{
+    color: #edf2fc;
+}
+/* let us add some java script code so lets move to html file*/ 
+/* to give toggle effect/ moving effect to login and register form and also to give many other effects with the help of java script code */  

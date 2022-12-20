@@ -1,0 +1,55 @@
+<!--Doctype stands for Document Type Declaration. It informs the web browser about the type and version of HTML used in building the web document-->
+<!DOCTYPE html>
+<html lang="en" dir="Itr">  <!--dir="itr" represents fron left to write writing -->
+<head>
+    <meta charset="UTF-8">
+    <title>Gamers webpage</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!---we have linked our css file -->
+</head>    
+<body>                                                                          
+    <div class="full-page">
+        <div id='login-form' class='login-page'>                   
+            <!-- creating the form-box-->                          
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()'class='toggle-btn'>Register</button>
+                </div>                                             
+                 <!-- creating login form-->                           
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field' id="username" placeholder='Email Id'required>
+                    <input type='password'class='input-field'id="password"placeholder='Enter Password'required>
+                    <input type='password'class='input-field'placeholder='Confirm Password'required>
+                    <input type='checkbox'class='check-box'><span>Remember me</span> <!--The <span> tag is an inline container used to mark up a part of a text-->
+                    <button type='submit'class='submit-btn' id="message">Log In</button>
+                    <button type='submit'class='forgot-password' id="forgot"><a href=""><u>Forgot Password ?</u></a></button>
+                </form>                                             
+                <!-- creating the registeration form--->                           
+                <form id='register' class='input-group-register'>
+                    <input type='text'class='input-field' id="firstname" placeholder='First Name'required> 
+                    <!--The placeholder attribute specifies a hint that describes the expected value of a input field/textarea-->
+                    <input type='text'class='input-field'placeholder='Last Name'required>
+                    <input type='email'class='input-field'placeholder='Email Id'required>
+                    <input type='password'class='input-field'placeholder='Enter Password'required>
+                    <input type='password'class='input-field'placeholder='Confirm Password'required>
+                    <input type='checkbox'class='check-box'><span>I agree to the terms and condition</span>
+                    <button type='submit'class='submit-btn' id="registermessage">Register</button>
+                </form>                                                            
+                <!--now let us style for the form page in css-->                           
+            </div>
+        </div>
+        <!-- let us give some social links to make the web page look good-->
+        <div class="social-links">
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </div>
+    </div>                                                                          
+    <!-- the 1st script code is the java script code used for login and registeration form to move corectly-->    
+    <!-- the java script to make the login form and register form toggle/move -->                     
+    <script src="login.js"></script>
+</body>
+</html>                                                                                        
